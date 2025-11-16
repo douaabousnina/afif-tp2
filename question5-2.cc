@@ -100,7 +100,7 @@ int main(int argc, char *argv[])
     interfaces.Add(address.Assign(apDevice));
 
     // UDP traffic
-    uint16_t port = 9;
+    uint16_t port = 7;
     UdpServerHelper server(port);
     ApplicationContainer serverApp = server.Install(wifiApNode.Get(0));
     serverApp.Start(Seconds(0.0));
